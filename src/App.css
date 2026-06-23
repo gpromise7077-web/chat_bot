@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #0d0d14;
 }
 .app {
   display: flex;
@@ -23,21 +24,24 @@ body {
 }
 .input {
   display: flex;
-  width: 80%;
-  outline: none;
-  border: none;
-  border-radius: 20px;
-  padding: 5px;
+  width: 100%;
+  border:
+    1px,
+    solid #6961e0;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #565658;
 }
 .input-area {
   display: flex;
+  width: 100%;
+  position: relative;
   align-items: center;
-  justify-content: center;
 }
 .background {
-  background-color: chocolate;
+  background-color: azure;
   width: 50%;
-  height: 430px;
+  height: 445px;
 }
 .chat-container {
   width: 100%;
@@ -47,9 +51,16 @@ body {
   overflow-x: hidden;
 }
 .btn {
-  outline: none;
+  display: flex;
+  left: 75%;
+  align-items: center;
+  margin-left: 20%;
+  position: absolute;
   border: none;
-  border-radius: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #727377;
 }
 .user-container {
   display: flex;

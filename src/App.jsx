@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
-import { IoSend } from "react-icons/io5";
+import { FaArrowUp } from "react-icons/fa";
 import { SiChatbot } from "react-icons/si";
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
       <div className="app">
         <div className="chatbot">
           <SiChatbot size={"50px"} className="icon" />
-          <h1 className="text">ChatBot</h1>
+          <h1 className="text"> MY-ChatBot</h1>
         </div>
         <div className="background">
           <div className="chat-container">
@@ -50,12 +50,12 @@ function App() {
             <input
               type="text"
               value={input}
-              placeholder="Message"
+              placeholder="Type your message..."
               className="input"
               onChange={(e) => setinput(e.target.value)}
             />
             <button onClick={dothis} className="btn">
-              <IoSend size={"20px"} />
+              <FaArrowUp size={"20px"} />
             </button>
           </div>
         </div>
