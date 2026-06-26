@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
+import "tailwindcss";
 import { FaArrowUp } from "react-icons/fa";
 import { SiChatbot } from "react-icons/si";
 
