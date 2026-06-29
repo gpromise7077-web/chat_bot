@@ -31,33 +31,34 @@ function App() {
 
   return (
     <>
-      <div className="app">
-        <div className="chatbot">
-          <SiChatbot size={"50px"} className="icon" />
-          <h1 className="text"> MY-ChatBot</h1>
-        </div>
-        <div className="background">
-          <div className="chat-container">
-            {chat.map((msg, index) => (
-              <div key={index} className={`${msg.sender}-container`}>
-                <p key={index} className={msg.sender}>
-                  {msg.Text}
-                </p>
-              </div>
-            ))}
+      <div>
+        <div className="flex flex-col items-center w-100 h-100">
+          <div className="flex items-center bg-[blue] w-100 justify-center p-5">
+            <SiChatbot size={"50px"} className="icon" />
+            <h1 className="text">MY-ChatBot</h1>
           </div>
-
-          <div className="input-area">
-            <input
-              type="text"
-              value={input}
-              placeholder="Type your message..."
-              className="input"
-              onChange={(e) => setinput(e.target.value)}
-            />
-            <button onClick={dothis} className="btn">
-              <FaArrowUp size={"20px"} />
-            </button>
+          <div className="bg-[azure] w-100 h-500">
+            <div className="chat-container">
+              {chat.map((msg, index) => (
+                <div key={index} className={`${msg.sender}-container`}>
+                  <p key={index} className={msg.sender}>
+                    {msg.Text}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className="input-area">
+              <input
+                type="text"
+                value={input}
+                placeholder="Type your message..."
+                className="input"
+                onChange={(e) => setinput(e.target.value)}
+              />
+              <button onClick={dothis} className="btn">
+                <FaArrowUp size={"20px"} />
+              </button>
+            </div>
           </div>
         </div>
       </div>
